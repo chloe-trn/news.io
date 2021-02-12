@@ -2,11 +2,11 @@ import React, { useState, useEffect} from 'react';                      // axios
 import axios from 'axios';
 
 // create a Context to apply global settings easily to deep child components
-const NewsContext = React.createContext(); 
+export const NewsContext = React.createContext(); 
 
 const NewsContextProvider = props => {
     const myApiKey = 'bd9243e5463046ab80b2e2916b76c33e';
-    const [newsData, setNewsData] = useState([]);
+    const [newsData, setNewsData] = useState();
     
     // get data from API through axios 
     useEffect(() => {
