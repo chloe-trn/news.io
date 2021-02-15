@@ -1,0 +1,20 @@
+// import fonts 
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+// import modules 
+@import "./variables.scss";
+
+// general styling
+*{
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+}
+body{
+  background-color: $mainColor;
+  color: $textColor;
+  font-family: $bodyFont;
+}
+
+
+

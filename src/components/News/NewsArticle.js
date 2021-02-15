@@ -12,7 +12,7 @@ const NewsArticle = articleData => {
             <p>{data.author}</p>
             <p>{data.publishedAt}</p>
             <p>{data.content}</p>
-            <a href={data.url} target='_blank'>Read Article</a>
+            <a href={data.url} target='_blank' rel="noreferrer">Read Article</a>
         </article>
     );
 }

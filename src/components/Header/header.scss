@@ -1,0 +1,21 @@
+@import "../../variables";
+
+h1{
+    font-family: $navFont;
+    font-size: 50px;
+    font-weight: lighter;
+}
+header{
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    margin: 70px 85px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+}

@@ -1,0 +1,42 @@
+@import "../../variables";
+
+form{
+    position: relative;
+
+    input[type="search"]{
+        font-family: $navFont;
+        font-size: 17px;
+        border: 1px solid $accentColor;
+        height: 43px; 
+        width: 250px;
+        border-radius: 11px;
+        padding-left: 10px;
+        ::-webkit-input-placeholder {
+            color: $placeholderColor;
+            opacity: 1;
+       }
+       :-moz-placeholder { /* Firefox 18- */
+            color: $placeholderColor;
+            opacity: 1;
+       }
+       ::-moz-placeholder {  /* Firefox 19+ */
+            color: $placeholderColor;
+            opacity: 1;
+       }
+       :-ms-input-placeholder {
+            color: $placeholderColor;
+            opacity: 1;
+       }
+    }
+
+    .search-icon{
+        font-size: 22px;
+        position: absolute;
+        right: 16px;
+        top: 9px;
+        cursor: pointer;
+        
+    }
+
+}
+
