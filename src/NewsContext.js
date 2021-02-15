@@ -5,12 +5,12 @@ import axios from 'axios';
 export const NewsContext = React.createContext(); 
 
 const NewsContextProvider = props => {
-    const myApiKey = 'bd9243e5463046ab80b2e2916b76c33e';
+    const myApiKey = 'Dg7aANgxQSDGc1cfAZ64paMSJRW6aLoA';
     const [newsData, setNewsData] = useState();
     
     // get data from API through axios 
     useEffect(() => {
-        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${myApiKey}`)
+        axios.get(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${myApiKey}`)
         .then( response => {
             // handle success 
             console.log('success');

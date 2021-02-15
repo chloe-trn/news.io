@@ -9,8 +9,8 @@ const NewsContent = props =>{
         <div>
         {
             newsData ? 
-            newsData.articles.map(articleData => (
-                <NewsArticle articleData={articleData} key={articleData.title} />
+            newsData.results.map(articleData => (
+                <NewsArticle articleData={articleData} key={articleData.title + articleData.url} />
             )) :
             <></>
         }

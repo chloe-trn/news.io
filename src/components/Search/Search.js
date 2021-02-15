@@ -6,9 +6,9 @@ import './search.scss';
 const Search = props => {
     return(
         <form role="search">
-            <label for="search"/>
+            <label htmlFor="search"/>
             <input type="search" name="search" aria-label="search text" placeholder="Search Articles..."/>
-            <label for="submit"/>
+            <label htmlFor="submit"/>
             <FontAwesomeIcon icon={faSearch} className="search-icon" name="submit" aria-label="submit search"/>
         </form>
     );
