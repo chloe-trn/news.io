@@ -1,0 +1,22 @@
+@import "../../variables";
+@import "../../mix-ins";
+
+.news-sort{
+    @include flex-display(row, space-between, center);
+    h2{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+.sort-control{
+    font-size: 14px;
+    @include flex-display(row, space-between, center);
+    select{
+        cursor: pointer;
+        font-size: 13px;
+        margin-left: 10px;
+        width: 105px;
+        padding: 3px 8px;
+        @include border-style(7px);
+    }
+}

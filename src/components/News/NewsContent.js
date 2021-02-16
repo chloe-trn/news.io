@@ -7,13 +7,13 @@ const NewsContent = props =>{
 
     return(
         <div>
-        {
-            newsData ? 
-            newsData.results.map(articleData => (
-                <NewsArticle articleData={articleData} key={articleData.title + articleData.url} />
-            )) :
-            <></>
-        }
+            {
+                newsData ? 
+                newsData.results.map(articleData => (
+                    <NewsArticle articleData={articleData} key={articleData.title + articleData.url} />
+                )) :
+                <></>
+            }
         </div>
     );
 }

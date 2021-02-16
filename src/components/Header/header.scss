@@ -1,4 +1,5 @@
 @import "../../variables";
+@import "../../mix-ins";
 
 h1{
     font-family: $navFont;
@@ -7,15 +8,11 @@ h1{
 }
 header{
     position: relative;
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-display(column, space-between, center);
     height: 80px;
-    margin: 70px 85px;
+    margin: 70px 0;
     .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
+        width: 100%;
+        @include flex-display(row, space-between, center);
     }
 }

@@ -1,4 +1,5 @@
 @import "../../variables";
+@import "../../mix-ins";
 
 form{
     position: relative;
@@ -11,6 +12,7 @@ form{
         width: 250px;
         border-radius: 11px;
         padding-left: 10px;
+        @include border-style(11px);
         ::-webkit-input-placeholder {
             color: $placeholderColor;
             opacity: 1;

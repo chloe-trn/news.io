@@ -1,0 +1,18 @@
+@import "./variables";
+
+// define mix-ins 
+@mixin flex-display($direction,$justify,$align) {
+    display: flex; 
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin center-vertically() {
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin border-style($radius) {
+    border: 1px solid $accentColor;
+    border-radius: $radius;
+}
